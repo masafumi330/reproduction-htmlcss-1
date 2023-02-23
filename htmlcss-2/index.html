@@ -12,61 +12,61 @@
 </head>
 
 <body>
-    <!-- ヘッダー -->
-    <header id="header" class="wrapper">
-        <h1 class="site-title">
-            <a href="index.html"><img decoding="async" src="img/logo.svg" alt="PhotoBook"></a>
-        </h1>
-    </header>
+    <div class="container">
+        <!-- ヘッダー -->
+        <header id="header">
+            <h1 class="site-title">
+                <a href="index.html"><img decoding="async" src="img/logo.svg" alt="PhotoBook"></a>
+            </h1>
+        </header>
 
-    <main>
-        <!-- メインビジュアル -->
-        <div id="mainvisual">
-            <a href="index.html"><img decoding="async" src="img/mainvisual.jpg" alt="テキストテキストテキストテキスト"></a>
-        </div>
+        <main>
+            <!-- メインビジュアル -->
+            <div id="mainvisual">
+                <a href="index.html"><img decoding="async" src="img/mainvisual.jpg" alt="テキストテキストテキストテキスト"></a>
+            </div>
 
-        <!-- Indexセクション -->
-        <section id="index" class="wrapper">
-            <div class="inner">
-                <div class="text">
-                    <h2 class="content-title">Index</h2>
-                    <ol>
+            <!-- Indexセクション -->
+            <section id="index">
+                <div class="inner">
+                    <h2 class="section-title">INDEX</h2>
+                    <ol class="index-list">
                         <li>テキストテキストテキスト</li>
                         <li>テキストテキストテキスト</li>
                         <li>テキストテキストテキスト</li>
                     </ol>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Detailセクション -->
-        <section id="detail" class="wrapper">
-            <div class="inner">
-                <h2 class="section-title">Detail</h2>
-                <div class="content">
-                    <img decoding="async" src="img/detail.jpg" alt="テキストテキストテキストテキスト">
-                    <div class="text">
-                        <p>タイトルタイトル</p>
-                        <dl>
-                            <dt>著者</dt>
-                            <dd>タイトルタイトル</dd>
-                            <dt>出版社</dt>
-                            <dd>タイトルタイトル</dd>
-                            <dt>発行年</dt>
-                            <dd>タイトルタイトル</dd>
-                        </dl>
-                        <p>タイトルタイトルタイトル</p>
-                        <a href="#">オンラインストアで見る</a>
+            <!-- Detailセクション -->
+            <section id="detail">
+                <div class="inner">
+                    <h2 class="section-title">DETAIL</h2>
+                    <div class="content">
+                        <img decoding="async" src="img/detail.jpg" alt="テキストテキストテキストテキスト" class="img">
+                        <div class="text">
+                            <p>タイトルタイトル</p>
+                            <dl>
+                                <dt>著者</dt>
+                                <dd>タイトルタイトル</dd>
+                                <dt>出版社</dt>
+                                <dd>タイトルタイトル</dd>
+                                <dt>発行年</dt>
+                                <dd>タイトルタイトル</dd>
+                            </dl>
+                            <p>タイトルタイトルタイトル</p>
+                            <a class="link" target="_blank" rel="noopener noreferrer" href="#">オンラインストアで見る</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <!-- フッター -->
-    <footer id="footer">
-        <p>2023 photo book</p>
-    </footer>
+        <!-- フッター -->
+        <footer id="footer">
+            <p class="inner">2023 photo book</p>
+        </footer>
+    </div>
 </body>
 
 </html>

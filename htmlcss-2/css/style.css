@@ -5,22 +5,31 @@ html {
 }
 
 body {
-    color: #383e45;
+    background-color: #f4f9ff;
+    color: #333;
     /* rem=htmlタグの文字サイズを基準とする相対的な文字サイズ */
-    font-size: 0.9rem;
-}
-
-a {
-    text-decoration: none;
+    font-size: 0.875rem;
 }
 
 img {
     max-width: 100%;
 }
 
-li {
-    list-style: none;
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
+.inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+/* 
+
 
 .site-title {
     width: 120px;
@@ -45,27 +54,30 @@ li {
     margin: 10px 0;
 }
 
-.wrapper {
+*/
+/* .wrapper {
     max-width: 960px;
-    /* 上 | 右 | 下 | 左 */
     margin: 0 auto 100px auto;
-    /* 上下 | 左右 */
     padding: 0 4%;
     text-align: center;
-}
+} */
 
 /* -----------------------------
 ヘッダー 
 -------------------------------*/
 
 #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    margin-top: 60px;
 }
 
-#header ul {
+#header .site-title {
+    width: 160px;
+    line-height: 1px;
+}
+
+
+
+/* #header ul {
     display: flex;
     padding: 10px 0;
 }
@@ -76,18 +88,18 @@ li {
 
 #header li a {
     color: #24292e;
-}
+} */
 
-#header li a:hover {
+/* メニューにマウスを乗せた時少し透過する */
+/* #header li a:hover {
     opacity: 0.7;
-    /* メニューにマウスを乗せた時少し透過する */
-}
+} */
 
 /* -----------------------------
 メインビジュアル 
 -------------------------------*/
 
-#mainvisual {
+/* #mainvisual {
     margin-bottom: 80px;
 }
 
@@ -96,14 +108,14 @@ li {
     max-width: 1920px;
     height: 600px;
     object-fit: cover;
-}
+} */
 
 
 /* -----------------------------
 About
 -------------------------------*/
 
-#about .content {
+/* #about .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,62 +130,34 @@ About
 
 #about .text {
     text-align: left;
-}
+} */
 
 /* -----------------------------
 Bicycle
 -------------------------------*/
 
-#bicycle ul {
+/* #bicycle ul {
     display: flex;
     justify-content: space-between;
 }
 
 #bicycle li {
     width: 32%;
-}
+} */
 
 /* -----------------------------
 footer
 -------------------------------*/
 
 #footer {
-    font-size: 0.5rem;
-    padding: 10px 0;
-    text-align: center;
+    font-size: 0.625rem;
+    padding: 15px 0;
 }
 
-/* ディスプレイかつ幅が600px以下であれば */
-@media screen and (max-width: 600px) {
-
-    /* -----------------------------
-    メインビジュアル 
-    -------------------------------*/
-    #mainvisual img {
-        height: calc(100vh - 60px);
-    }
-
-    /* -----------------------------
-    About
-    -------------------------------*/
-    #about .content {
-        flex-direction: column;
-    }
-
-    #about img {
-        margin-right: 0;
-    }
-
-    /* -----------------------------
-    About
-    -------------------------------*/
-    #bicycle ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #bicycle li {
-        width: 100%;
-        margin-bottom: 30px;
+/* ブレークポイント 1024px */
+/* ディスプレイかつ幅が1024px以下であれば */
+@media screen and (max-width: 1024px) {
+    #header {
+        padding: 0 10px;
     }
 }
