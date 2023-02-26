@@ -26,15 +26,10 @@ img {
     margin: 0 auto;
 }
 
-
-
-/* 
-
-
 .site-title {
-    width: 120px;
+    width: 160px;
     line-height: 1px;
-    padding: 10px 0;
+    margin-bottom: 15px;
 }
 
 .site-title a {
@@ -42,12 +37,17 @@ img {
 }
 
 .section-title {
-    display: inline-block;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 60px;
-    border-bottom: solid 1px #383e45;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
+/* 
+
+
+
+
+
 
 .content-title {
     font-size: 1rem;
@@ -99,27 +99,34 @@ img {
 メインビジュアル 
 -------------------------------*/
 
-/* #mainvisual {
-    margin-bottom: 80px;
+#mainvisual {
+    margin-bottom: 60px;
 }
 
 #mainvisual img {
     width: 100%;
-    max-width: 1920px;
-    height: 600px;
-    object-fit: cover;
-} */
+}
 
 
 /* -----------------------------
-About
+Index
 -------------------------------*/
 
-/* #about .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#index {
+    background-color: #fff;
+    padding: 30px 0;
+    margin-bottom: 60px;
 }
+
+#index .index-list {
+    margin-left: 20px;
+}
+
+#index .index-list li {
+    margin-bottom: 20px;
+}
+
+/* 
 
 #about img {
     width: 100px;
